@@ -31,31 +31,26 @@ class MyApp extends StatelessWidget {
           ],
         ),
 
-        body: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Column(children: [
-            Text("First Text",style: TextStyle(fontSize: 40),),
-            SizedBox(height: 50,),
-            Text("Second Text",style: TextStyle(fontSize: 40),),
-            SizedBox(height: 50,),
-            Text("Third Text",style: TextStyle(fontSize: 40),),     Text("First Text",style: TextStyle(fontSize: 40),),
-            SizedBox(height: 50,),
-            Text("Second Text",style: TextStyle(fontSize: 40),),
-            SizedBox(height: 50,),
-            Text("Third Text",style: TextStyle(fontSize: 40),),     Text("First Text",style: TextStyle(fontSize: 40),),
-            SizedBox(height: 50,),
-            Text("Second Text",style: TextStyle(fontSize: 40),),
-            SizedBox(height: 50,),
-            Text("Third Text",style: TextStyle(fontSize: 40),),     Text("First Text",style: TextStyle(fontSize: 40),),
-            SizedBox(height: 50,),
-            Text("Second Text",style: TextStyle(fontSize: 40),),
-            SizedBox(height: 50,),
-            Text("Third Text",style: TextStyle(fontSize: 40),),     Text("First Text",style: TextStyle(fontSize: 40),),
-            SizedBox(height: 50,),
-            Text("Second Text",style: TextStyle(fontSize: 40),),
-            SizedBox(height: 50,),
-            Text("Third Text",style: TextStyle(fontSize: 40),),
-          ],),
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Text("First Text", style: TextStyle(fontSize: 40)),
+            SizedBox(height: 50),
+            Text("Second Text", style: TextStyle(fontSize: 40)),
+            SizedBox(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Icon(Icons.add),
+                Icon(Icons.add),
+
+                Icon(Icons.add),
+
+                Icon(Icons.add),
+              ],
+            ),
+          ],
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
