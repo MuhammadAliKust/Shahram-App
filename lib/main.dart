@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shahram_app/asset_image.dart';
 
+import 'list_view.dart';
 import 'login.dart';
 import 'network_image.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LoginView(),
+      home: ListViewDemo(),
       // home: Scaffold(
       //   backgroundColor: Colors.yellow,
       //   appBar: AppBar(
