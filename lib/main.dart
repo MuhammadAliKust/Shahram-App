@@ -6,6 +6,7 @@ import 'list_view.dart';
 import 'login.dart';
 import 'multiple_selection.dart';
 import 'network_image.dart';
+import 'notification.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MultipleSelectionDemo(),
+      home: NotificationDemo(),
       // home: Scaffold(
       //   backgroundColor: Colors.yellow,
       //   appBar: AppBar(
