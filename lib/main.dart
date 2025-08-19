@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shahram_app/asset_image.dart';
+import 'package:shahram_app/page_view.dart';
 import 'package:shahram_app/single_selection.dart';
 
 import 'list_view.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: NotificationDemo(),
+      home: PageViewDemo(),
       // home: Scaffold(
       //   backgroundColor: Colors.yellow,
       //   appBar: AppBar(
