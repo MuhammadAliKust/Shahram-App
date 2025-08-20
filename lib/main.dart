@@ -3,6 +3,7 @@ import 'package:shahram_app/asset_image.dart';
 import 'package:shahram_app/page_view.dart';
 import 'package:shahram_app/single_selection.dart';
 
+import 'gird_view.dart';
 import 'list_view.dart';
 import 'login.dart';
 import 'multiple_selection.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: PageViewDemo(),
+      home: GridViewDemo(),
       // home: Scaffold(
       //   backgroundColor: Colors.yellow,
       //   appBar: AppBar(
