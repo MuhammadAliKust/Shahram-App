@@ -19,7 +19,6 @@ class _BottomBarDemoState extends State<BottomBarDemo> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: screenList.elementAt(selectedIndex),
-
       bottomNavigationBar: BottomNavigationBar(
         onTap: (tapIndex) {
           selectedIndex = tapIndex;
