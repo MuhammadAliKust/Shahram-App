@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shahram_app/asset_image.dart';
 import 'package:shahram_app/page_view.dart';
 import 'package:shahram_app/single_selection.dart';
+import 'package:shahram_app/tabbar_demo.dart';
 
 import 'bottom_bar.dart';
 import 'gird_view.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: BottomBarDemo(),
+      home: TabbarDemo(),
       // home: Scaffold(
       //   backgroundColor: Colors.yellow,
       //   appBar: AppBar(
