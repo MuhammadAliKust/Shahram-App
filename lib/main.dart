@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shahram_app/asset_image.dart';
 import 'package:shahram_app/page_view.dart';
+import 'package:shahram_app/screen_a.dart';
 import 'package:shahram_app/single_selection.dart';
 import 'package:shahram_app/tabbar_demo.dart';
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: TabbarDemo(),
+      home: ScreenAView(),
       // home: Scaffold(
       //   backgroundColor: Colors.yellow,
       //   appBar: AppBar(
