@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:shahram_app/asset_image.dart';
 import 'package:shahram_app/page_view.dart';
+import 'package:shahram_app/providers/user.dart';
 import 'package:shahram_app/screen_a.dart';
 import 'package:shahram_app/single_selection.dart';
 import 'package:shahram_app/tabbar_demo.dart';
@@ -14,7 +16,12 @@ import 'network_image.dart';
 import 'notification.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    MultiProvider(
+      providers: [ChangeNotifierProvider(create: (context) => UserProvider())],
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
