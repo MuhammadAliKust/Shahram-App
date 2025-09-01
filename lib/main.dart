@@ -8,6 +8,8 @@ import 'package:shahram_app/single_selection.dart';
 import 'package:shahram_app/tabbar_demo.dart';
 
 import 'bottom_bar.dart';
+import 'bottom_sheet.dart';
+import 'dialog_box.dart';
 import 'gird_view.dart';
 import 'list_view.dart';
 import 'login.dart';
@@ -30,7 +32,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ScreenAView(),
+      home: BottomSheetDemo(),
       // home: Scaffold(
       //   backgroundColor: Colors.yellow,
       //   appBar: AppBar(
