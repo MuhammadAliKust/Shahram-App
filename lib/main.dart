@@ -11,6 +11,7 @@ import 'bottom_bar.dart';
 import 'bottom_sheet.dart';
 import 'dialog_box.dart';
 import 'gird_view.dart';
+import 'google_map.dart';
 import 'list_view.dart';
 import 'login.dart';
 import 'multiple_selection.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: BottomSheetDemo(),
+      home: GoogleMapDemo(),
       // home: Scaffold(
       //   backgroundColor: Colors.yellow,
       //   appBar: AppBar(
