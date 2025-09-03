@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -10,6 +11,7 @@ class TimePickerDemo extends StatefulWidget {
 
 class _TimePickerDemoState extends State<TimePickerDemo> {
   TimeOfDay selectedTime = TimeOfDay.now();
+  bool isSwitchOn = false;
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +22,16 @@ class _TimePickerDemoState extends State<TimePickerDemo> {
           Text(
             selectedTime.format(context).toString(),
             style: TextStyle(fontSize: 40),
+          ),
+          ListTile(
+            title: Text("Notifications"),
+            trailing: CupertinoSwitch(
+              value: isSwitchOn,
+              onChanged: (val) {
+                isSwitchOn = val;
+                setState(() {});
+              },
+            ),
           ),
           Center(
             child: ElevatedButton(
